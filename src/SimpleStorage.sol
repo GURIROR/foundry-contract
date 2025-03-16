@@ -14,6 +14,7 @@ contract SimpleStorage {
         string name;
     }
     // uint256[] public anArray;
+
     Person[] public listOfPeople;
 
     mapping(string => uint256) public nameToFavoriteNumber;
@@ -30,4 +31,4 @@ contract SimpleStorage {
         listOfPeople.push(Person(_favoriteNumber, _name));
         nameToFavoriteNumber[_name] = _favoriteNumber;
     }
-} 
+}
